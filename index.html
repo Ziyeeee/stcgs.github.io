@@ -39,7 +39,7 @@
           <h1 class="title is-1 publication-title">High-Dynamic Radar Sequence Prediction for Weather Nowcasting Using Spatiotemporal Coherent Gaussian Representation</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://github.com/Ziyeeee">Ziye Wang</a><sup>1,2</sup>,</span>
+              <a href="https://ziyeeee.github.io">Ziye Wang</a><sup>1,2</sup>,</span>
             <span class="author-block">
               <a href="https://github.com/IranQin">Yiran Qin</a><sup>2</sup>,</span>
             <span class="author-block">
@@ -69,7 +69,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href=""
+                <a href="https://arxiv.org/pdf/2502.14895"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -78,7 +78,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href=""
+                <a href="https://arxiv.org/abs/2502.14895"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -112,80 +112,6 @@
     </div>
   </div>
 </section>
-
-<!-- <section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
-      </h2>
-    </div>
-  </div>
-</section>
-
-
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
 
 
 <section class="section">
@@ -245,8 +171,7 @@
                alt="Method Overview"/>
           <h3>Re-Representation</h3>
           <p>
-            Although many models have achieved progress in dynamic scene reconstruction, our task imposes additional 
-            requirements. In our context, the Gaussian representation must not only faithfully recover the original 
+            In this task, the Gaussian representation must not only faithfully recover the original 
             3D radar data but also effectively capture and embed dynamic scene information for prediction. This ensures 
             that the representation provides predictive and traceable implicit features for downstream tasks. 
             To meet this objective, each Gaussian is designed to closely track the motion of its corresponding reconstructed 
@@ -269,9 +194,8 @@
             to our forecasting task. A robust predictive model in our scenario must not only utilize the immediate past 
             frame to predict subsequent changes but also maintain a memory of the entire historical sequence—from the first 
             frame through the current one. To achieve this, we augment the Mamba architecture with a memory mechanism by 
-            integrating GRU modules into the Mamba blocks. This modification endows the model with the capacity to capture 
-            long-range spatiotemporal dependencies, enabling it to accurately predict the evolution of the Gaussian 
-            representations.
+            integrating GRU modules into the Mamba blocks. This improvement endows the model with the capacity to capture 
+            long-range spatiotemporal dependencies, enabling it to accurately predict the evolution of each Gaussian.
           </p>
           <img src="./static/images/GauMamba.png"
                alt="GauMamba"/>

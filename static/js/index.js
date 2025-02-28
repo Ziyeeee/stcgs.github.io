@@ -26,6 +26,14 @@ function preloadImages() {
       images[key][i] = new Image();
       images[key][i].src = path;
     }
+
+      const typeInterval = setInterval(() => {
+          const loaded = images[key].every(img => img.complete);
+          if (loaded) {
+              console.log(`${key} 加载完成：`, true);
+              clearInterval(typeInterval);
+          }
+      }, 1000);
   })
 }
 

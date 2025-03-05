@@ -21,7 +21,7 @@ function preloadImages() {
       if (key === 'gifs') {
         var path = IMAGES_BASE+ key + '/result' + String(i).padStart(2, '0') + '.gif';
       } else {
-        var path = IMAGES_BASE+ key + '/frame' + String(i).padStart(2, '0') + '.png';
+        var path = IMAGES_BASE+ key + '/frame' + String(i).padStart(2, '0') + '.jpg';
       }
       images[key][i] = new Image();
       images[key][i].src = path;

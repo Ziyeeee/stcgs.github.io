@@ -32,7 +32,8 @@ function preloadImages() {
           if (loaded) {
               console.log(`${key} 加载完成：`, true);
               clearInterval(typeInterval);
-              $('#'+type+'-image-wrapper').classList.remove('loading');
+              document.getElementById(`${key}-image-wrapper`).classList.remove('loading');
+              document.getElementById(`${key}-image-wrapper`).classList.add('loaded');
           }
       }, 1000);
   })
